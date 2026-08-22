@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Turbo Reign X — competitive Valorant organization." />
+  <title>Turbo Reign X | Valorant</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Orbitron:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="noise"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Turbo Reign X home">
+      <span class="brand-mark"><img src="assets/trx-mark.png" alt="TRX logo"></span>
+      <span class="brand-copy">
+        <strong>Turbo Reign X</strong>
+        <small>Valorant Esports</small>
+      </span>
+    </a>
+
+    <button class="menu-btn" id="menuBtn" aria-label="Open navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="nav" id="nav">
+      <a href="#home">Home</a>
+      <a href="#teams">Teams</a>
+      <a href="#trophies">Trophies</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">COMPETE. ADAPT. REIGN.</p>
+        <h1>WELCOME TO <span>TURBO REIGN X</span></h1>
+        <p class="hero-text">
+          A competitive Valorant organization built around sharp mechanics,
+          strong team chemistry and a distinct identity on every server.
+        </p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#teams">Meet the teams</a>
+          <a class="btn ghost" href="#about">Our story</a>
+        </div>
+
+        <div class="hero-stats">
+          <div><strong>4</strong><span>Rosters</span></div>
+          <div><strong>20</strong><span>Players</span></div>
+          <div><strong>1</strong><span>Mission</span></div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="orb orb-one"></div>
+        <div class="orb orb-two"></div>
+        <div class="hero-card">
+          <div class="crest"><img src="assets/trx-mark.png" alt="Turbo Reign X logo"></div>
+          <h2>TRX KNIGHTS</h2>
+          <p>Built to lead the reign.</p>
+          <div class="status"><i></i> Active roster</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section teams-section" id="teams">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">THE LINEUPS</p>
+          <h2>OUR TEAMS</h2>
+        </div>
+        <p>
+          Pick a roster to reveal its five-player lineup. Player names,
+          roles and tracker links are all easy to edit in <code>script.js</code>.
+        </p>
+      </div>
+
+      <div class="team-tabs" id="teamTabs">
+        <button class="team-tab active" data-team="knights">
+          <span>Main Team</span>
+          TRX Knights
+        </button>
+        <button class="team-tab" data-team="power">
+          <span>Roster 02</span>
+          TRX Power
+        </button>
+        <button class="team-tab" data-team="mura">
+          <span>Roster 03</span>
+          TRX Mura
+        </button>
+        <button class="team-tab" data-team="bind">
+          <span>Roster 04</span>
+          TRX Bind
+        </button>
+      </div>
+
+      <div class="roster-panel">
+        <div class="roster-top">
+          <div>
+            <p class="eyebrow" id="rosterLabel">MAIN ROSTER</p>
+            <h3 id="rosterTitle">TRX KNIGHTS</h3>
+          </div>
+          <p id="rosterDescription">
+            The flagship Turbo Reign X lineup — our primary competitive roster.
+          </p>
+        </div>
+
+        <div class="players-grid" id="playersGrid"></div>
+        <div class="coach-wrap" id="coachWrap"></div>
+      </div>
+    </section>
+
+    <section class="section trophies-section" id="trophies">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">THE CABINET</p>
+          <h2>OUR ACHIEVEMENTS</h2>
+        </div>
+        <p>
+          Replace these placeholders with your real tournament placements,
+          event names and dates whenever you want.
+        </p>
+      </div>
+
+      <div class="trophy-grid">
+        <article class="trophy-card featured">
+          <div class="trophy-icon">♛</div>
+          <div>
+            <span>1ST PLACE</span>
+            <h3>RADIANT EVOLUTION SERIES</h3>
+            <p>2026 • Valorant</p>
+          </div>
+        </article>
+        <article class="trophy-card">
+          <div class="trophy-icon">◆</div>
+          <div>
+            <span>TOP 4</span>
+            <h3>Regional Clash</h3>
+            <p>2026 • Valorant</p>
+          </div>
+        </article>
+        <article class="trophy-card">
+          <div class="trophy-icon">★</div>
+          <div>
+            <span>RUNNER-UP</span>
+            <h3>Night Series</h3>
+            <p>2025 • Valorant</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section about-section" id="about">
+      <div class="about-card">
+        <div>
+          <p class="eyebrow">WHO WE ARE</p>
+          <h2>ABOUT TURBO REIGN X</h2>
+        </div>
+        <div class="about-copy">
+          <p>
+            Turbo Reign X is a Valorant team focused on competition, improvement
+            and building a strong community around our players. We believe good
+            teams are made through discipline, trust and the willingness to keep
+            learning.
+          </p>
+          <p>
+            Our organization currently fields four rosters: TRX Knights,
+            TRX Power, TRX Mura and TRX Bind. TRX Knights serves as our main
+            lineup, while every roster represents the same TRX identity.
+          </p>
+          <p class="edit-note">
+            This text is intentionally simple so you can replace it with your
+            real history, goals, region, achievements and recruitment info.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section values-section">
+      <div class="mini-card">
+        <span>01</span>
+        <h3>Discipline</h3>
+        <p>Show up prepared, communicate clearly and improve with purpose.</p>
+      </div>
+      <div class="mini-card">
+        <span>02</span>
+        <h3>Team First</h3>
+        <p>Individual skill matters. Strong chemistry turns it into wins.</p>
+      </div>
+      <div class="mini-card">
+        <span>03</span>
+        <h3>Always Evolving</h3>
+        <p>Every scrim, loss and victory is another chance to get sharper.</p>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="contact-card">
+        <div>
+          <p class="eyebrow">GET IN TOUCH</p>
+          <h2>READY TO CONNECT?</h2>
+          <p>
+            Use this section for scrim requests, tournament invites,
+            partnerships, recruitment or general contact.
+          </p>
+        </div>
+        <div class="contact-actions">
+          <a class="btn primary" href="mailto:your-email@example.com">Email TRX</a>
+          <a class="btn ghost" href="#" target="_blank" rel="noreferrer">Discord</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <a class="brand" href="#home">
+      <span class="brand-mark"><img src="assets/trx-mark.png" alt="TRX logo"></span>
+      <span class="brand-copy">
+        <strong>Turbo Reign X</strong>
+        <small>Valorant Esports</small>
+      </span>
+    </a>
+    <p>© <span id="year"></span> Turbo Reign X. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="#">X / Twitter</a>
+      <a href="#">Discord</a>
+      <a href="#">YouTube</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
