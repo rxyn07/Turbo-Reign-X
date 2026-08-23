@@ -58,9 +58,8 @@ const teams = {
   }
 };
 
-// ==========================================
 // Roster rendering
-// ==========================================
+
 const tabs = document.querySelectorAll(".team-tab");
 const playersGrid = document.getElementById("playersGrid");
 const rosterTitle = document.getElementById("rosterTitle");
@@ -95,8 +94,6 @@ function renderTeam(teamKey) {
     `)
     .join("");
 
-  // Coach is completely optional.
-  // If coach.name is empty, nothing is shown on the website.
   if (team.coach && team.coach.name.trim()) {
     const trackerLink = team.coach.tracker && team.coach.tracker.trim()
       ? `<a class="coach-tracker" href="${team.coach.tracker}" target="_blank" rel="noreferrer">View Tracker ↗</a>`
@@ -124,12 +121,10 @@ tabs.forEach((tab) => {
   });
 });
 
-// Load main team first
+// MAIN TEAM
 renderTeam("knights");
 
-// ==========================================
-// Mobile menu
-// ==========================================
+
 const menuBtn = document.getElementById("menuBtn");
 const nav = document.getElementById("nav");
 
@@ -145,9 +140,7 @@ nav.querySelectorAll("a").forEach((link) => {
   });
 });
 
-// ==========================================
-// Small reveal animation
-// ==========================================
+
 const revealTargets = document.querySelectorAll(
   ".section-heading, .team-tabs, .roster-panel, .trophy-card, .about-card, .mini-card, .contact-card"
 );
